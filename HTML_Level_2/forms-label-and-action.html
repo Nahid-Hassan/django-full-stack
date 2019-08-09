@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms Label and Action</title>
+  </head>
+  <body>
+    <!-- using form with action and method parameter -->
+    <form action="https://facebook.com" method = "get">
+      <p>Enter email</p>
+      <input type="email" name="useremail" value="">
+      <input type="submit" name="" value="submit">
+    </form>
+    <!-- using label with form -->
+    <form>
+      <label>
+        Enter text:
+        <input type="text" name="" placeholder="Text going here">
+        Enter another text:
+        <input type="text" name="text" value="nothing">
+      </label>
+
+      <!-- label with for parameter -->
+        <label for="userinput">Enter input: </label>
+        <input id = userinput ype="email" name="useremail" placeholder="email going here">
+
+        <!-- check  required parameter -->
+        <p>Enter Email</p>
+        <input type="email" name="useremail" placeholder="not required">
+        <input type="email" name="useremail" placeholder="required" required>
+        <input type="submit" name="" value="submit">
+    </form>
+  </body>
+</html>
