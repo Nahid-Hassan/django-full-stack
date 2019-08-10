@@ -1,0 +1,27 @@
+
+body {
+  /* background-color: gray; */
+  /* we also use url() */
+  background-color: url(https://kids.nationalgeographic.com/content/dam/kids/photos/articles/Nature/H-P/Habitats/Ocean/wave.ngsversion.1500050062134.adapt.1900.1.jpg);
+  /* you can also used background: instead of background-color: */
+  /* background-repeat: no-repeat; */
+  background-repeat: repeat;
+}
+
+div {
+  background: blue;
+  border-color: orange;
+  /* border-width:thick; */
+  /* you can also used it to specify pixel */
+  border-width: 4px;
+  border-style: double;
+}
+
+p {
+  color: yellow;
+}
+
+span {
+  background: red;
+  color: black;
+}
