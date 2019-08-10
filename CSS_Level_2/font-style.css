@@ -1,0 +1,19 @@
+h2 {
+  font-family: cursive;
+  text-align: center;
+}
+
+p {
+  font-family: monospace;
+  font-weight: normal;
+}
+
+body {
+  font-size: 20px;
+  font-style: italic;
+}
+
+#text {
+  font-size: 1.2em;
+  font-style: oblique;
+}
