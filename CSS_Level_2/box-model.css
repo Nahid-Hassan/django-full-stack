@@ -1,0 +1,14 @@
+#top {
+    border: 2px solid blue;
+    text-align: center;
+    width: 30%;
+    margin:auto;
+}
+
+#bottom {
+  border: 3px solid crimson;
+  text-align: center;
+  width: 50%;
+  padding: 200px;
+  /* margin: auto; */
+}
