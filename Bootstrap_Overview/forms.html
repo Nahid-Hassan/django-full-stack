@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap forms</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <form>
+      <div class="container">
+        <div class="form-group">
+          <label for="exampleInputEamil1">Email address</label>
+          <input type="eamil" class="form-control" id="exampleInputEamil1" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputFile">File input</label>
+          <input type="file" id="exampleInputFile">
+          <p class="help-block">Exampe block-level help text here.  </p>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Check me out
+          </label>
+        </div>
+        <button type="submit" class='btn btn-primary' name="button">Submit</button>
+      </div>
+    </form>
+
+    <!-- inline form -->
+    <form>
+      <div class="container">
+        <h2>Inline form</h2>
+        <p>Add <strong>.form-inline</strong> to your form (which doesn't have to be a <form>) for left-aligned and inline-block controls.<strong>This only applies to forms within viewports that are at least 768px wide.</strong></p>
+          <div class="container">
+            <div class="form-inline">
+              <div class="form-group">
+                <label for="exampleInputName2">Name</label>
+                <input type="text" class="form-control" id="exampleInputName2" placeholder="Jone Doe">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail2">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+              </div>
+              <button type="submit" class="btn btn-default">Send invitation</button>
+            </div>
+          </div>
+        </div>
+    </form>
+    <div class="container">
+      <div class="page-header">
+        <h2>Dropdown select</h2>
+      </div>
+      <div class="form-group">
+        <label for="exampleSelect1">Example Select</label>
+        <select class="form-control" id="exampleSelect1" name="">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <div class="page-header">
+        <h2>Multiple Select</h2>
+      </div>
+      <div class="form-group">
+        <label for="exampleSelect1">Example Select</label>
+        <select multiple class="form-control" id="exampleSelect1" name="">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleTextarea">Example textarea</label>
+        <textarea class="form-control" id="exampleTextarea"></textarea>
+      </div>
+      <div class="fomr-group">
+        <label for="exampleInputFile">File Input</label>
+        <input type="file" class="form-control-file" id=exampleInputFile>
+        <small id='findHelp class='from-text text-muted>This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line</small>
+      </div>
+    </div>
+  </body>
+</html>
