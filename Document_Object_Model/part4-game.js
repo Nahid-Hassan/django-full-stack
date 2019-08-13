@@ -14,13 +14,22 @@ function clearBoard() {
 }
 restart.addEventListener('click',clearBoard)
 
+var flag = true;
+
 function changeMarker() {
-  if(this.textContent === '') {
+  // if(this.textContent === '') {
+  //   this.textContent = 'X';
+  // } else if (this.textContent === 'X') {
+  //   this.textContent = 'O';
+  // } else {
+  //   this.textContent = '';
+  // }
+  if(flag) {
     this.textContent = 'X';
-  } else if (this.textContent === 'X') {
-    this.textContent = 'O';
+    flag = false;
   } else {
-    this.textContent = '';
+    this.textContent = 'O';
+    flag = true;
   }
 }
 
