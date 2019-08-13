@@ -1,29 +1,29 @@
-// Let&apos;s type this into the console, follow along with the video lecture
+// Let's type this into the console, follow along with the video lecture
 
-var x = document.querySelector(&quot;p&quot;)
+var x = document.querySelector("p")
 
 // Show Text
 x.textContent
 
 // Reassign Text
-x.textContent = &quot;new&quot;
+x.textContent = "new"
 
 // Refresh the page
 // Show actual HTML
 x.innerHTML
 
 // Edit HTML
-x.innerHTML = &quot;This is &lt;strong&gt;BOLD&lt;/strong&gt;&quot;
+x.innerHTML = "This is <strong>BOLD</strong>"
 
-// Can&apos;t do that with just textContent
+// Can't do that with just textContent
 
 /////////////////
 // Attributes //
 ///////////////
 
-var special = document.querySelector(&quot;#special&quot;)
-var specialA = y.querySelector(&quot;a&quot;)
+var special = document.querySelector("#special")
+var specialA = y.querySelector("a")
 
-specialA.getAttribute(&quot;href&quot;)
+specialA.getAttribute("href")
 
-specialA.setAttribute(&quot;href&quot;,&quot;https://www.amazon.com&quot;)
+specialA.setAttribute("href","https://www.amazon.com")
