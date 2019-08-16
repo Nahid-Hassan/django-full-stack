@@ -14,25 +14,37 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-import first_app.views as views
+from django.urls import include, path
 
 urlpatterns = [
+    path('', include('first_app.urls')),
+    # path('karim/',include('first_app.urls')),
+    # path('index/', include('first_app.urls')),
+    # path('check/', include('first_app.urls')),
+    path('first_app/', include('first_app.urls')),
     path('admin/', admin.site.urls),
-    path('', views.index, name='index'),
 ]
 
-"""
+
+# from django.contrib import admin
+# from django.urls import path
+# import first_app.views as views
+# from django.conf.urls import include
+
+# urlpatterns = [
+#     path('', views.index, name='index'),
+#     path('first_app/', include(first_app.urls)),
+#     path('admin/', admin.site.urls),
+#]
 # Another Process:
 
-from django.conf.urls import url
-from django.contrib import admin
-from django.conf.urls import include
-from first_app import views
+# from django.conf.urls import url
+# from django.contrib import admin
+# from django.conf.urls import include
+# from first_app import views
 
-urlpatterns = [
-    url(r'^$',views.index,name='index'),
-    url(r'^first_app/',include('first_app.urls')),
-    url(r'^admin/', admin.site.urls),
-]
-"""
+# urlpatterns = [
+#     url(r'^$',views.index,name='index'),
+#     url(r'^first_app/',include('first_app.urls')),
+#     url(r'^admin/', admin.site.urls),
+# ]
