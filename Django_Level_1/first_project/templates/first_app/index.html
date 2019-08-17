@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+{% load staticfiles %}
+<html>
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap forms</title>
+    <title>Great People</title>
+      <link rel="stylesheet" href="{% static "css/style.css" %}"/>
   </head>
   <body>
-    <h1> Template Basics </h1> 
-    {{insert_me}}
+    <h1>Hi, this is a picture of Nelson Mendala!</h1>
+    <img src="{% static "images/nelson-mendala.jpg" %}" alt="Uh Oh, didn't show!">
   </body>
 </html>
