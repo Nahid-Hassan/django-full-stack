@@ -1,20 +1,10 @@
-"""
-Python Scope:
-    1. Local
-    2. Enclosing Function locals
-    3. Global
-    4. Built-in
-"""
+def add(num1, num2):
+    print(num1 + num2)
 
-#Enclosing function locals
-value = 100
+def main():
+	add(10,20)
 
-def changed_global_value():
-    # global value
-    value = 50
 
-    return value;
-
-print('Before function call ', value)
-value = changed_global_value()
-print('After function calling ',value)
+if __name__ == '__main__':
+    	main()
+	
